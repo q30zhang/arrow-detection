@@ -5,16 +5,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 from typing import List
 
 import cv2
-
-REPO_ROOT = Path(__file__).resolve().parents[1]
-SRC_PATH = REPO_ROOT / "src"
-if str(SRC_PATH) not in sys.path:
-    sys.path.insert(0, str(SRC_PATH))
 
 from arrow_detection import ArrowDetector
 
